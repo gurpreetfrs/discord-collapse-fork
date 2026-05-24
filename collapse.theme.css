@@ -25,6 +25,7 @@
     --13: 0.3s;
 
     --guild-hover-width: 16px;
+    --guild-peek: 28px;
     --user-hover-width: 12px;
 
     --ease: cubic-bezier(0.4, 0.0, 0.2, 1);
