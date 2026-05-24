@@ -1,22 +1,19 @@
 .container_c8ffbb{
     opacity: 0;
     width: 0px;
-    min-width: var(--user-hover-width, 12px);
-    transition: width var(--11) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1)), opacity var(--11) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1));
+    transition: var(--11);
     transition-delay: var(--12);
     padding: 1px;
 }
 .container_c8ffbb:hover{
     opacity: 1;
     width: var(--custom-member-list-width);
-    min-width: var(--custom-member-list-width);
-    transition: width var(--10) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1)), opacity var(--10) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1));
+    transition: var(--10);
     transition-delay: var(--13);
 }
 .container_c8ffbb:has(.selected__91a9d){
     opacity: 1;
     width: var(--custom-member-list-width);
-    min-width: var(--custom-member-list-width);
 }
 
 .toolbar__9293f > div[aria-label="Hide Member List"]{
