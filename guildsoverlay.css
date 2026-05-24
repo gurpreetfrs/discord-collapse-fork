@@ -3,15 +3,15 @@
     z-index: 101;
     height: 100%;
     padding-right: var(--guild-hover-width, 12px);
-    left: calc(0px - var(--custom-guild-list-width));
+    left: calc(0px - var(--custom-guild-list-width) - var(--guild-hover-width, 12px));
     box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.0);
-    transition: var(--2);
+    transition: left var(--2) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1)), box-shadow var(--2) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1));
     transition-delay: var(--3);
 }
 .guilds__5e434:hover{
     left: 0px;
     padding-right: 0px;
     box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.3);
-    transition: var(--1);
+    transition: left var(--1) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1)), box-shadow var(--1) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1));
     transition-delay: var(--4);
 }
