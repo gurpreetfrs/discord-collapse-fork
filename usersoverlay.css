@@ -2,18 +2,18 @@
     position: absolute;
     z-index: 10;
     height: 100%;
-    right: calc(0px - var(--custom-member-list-width));
+    right: calc(0px - var(--custom-member-list-width) - var(--user-hover-width, 12px));
     background-color: var(--background);
     padding-left: var(--user-hover-width, 12px);
     box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.0);
-    transition: var(--11);
+    transition: right var(--11) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1)), box-shadow var(--11) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1));
     transition-delay: var(--12);
 }
 .membersWrap_c8ffbb:hover{
     right: 0px;
     padding-left: 0px;
     box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.3);
-    transition: var(--10);
+    transition: right var(--10) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1)), box-shadow var(--10) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1));
     transition-delay: var(--13);
 }
 .membersWrap_c8ffbb:has(.selected__91a9d){
@@ -21,11 +21,11 @@
     padding-left: 0px;
     box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.3);
 }
- 
+
 .toolbar__9293f > div[aria-label="Hide Member List"]{
     display: none;
 }
- 
+
 .container_c8ffbb{
     width: 0px;
 }
