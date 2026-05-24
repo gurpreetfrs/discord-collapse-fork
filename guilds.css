@@ -1,15 +1,13 @@
 .guilds__5e434{
     opacity: 0;
     width: 0px !important;
-    min-width: var(--guild-hover-width, 12px);
-    transition: width var(--2) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1)), opacity var(--2) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1));
+    transition: var(--2);
     transition-delay: var(--3);
     padding: 1px;
 }
 .guilds__5e434:hover{
     opacity: 1;
     width: var(--custom-guild-list-width) !important;
-    min-width: var(--custom-guild-list-width);
-    transition: width var(--1) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1)), opacity var(--1) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1));
+    transition: var(--1);
     transition-delay: var(--4);
 }
