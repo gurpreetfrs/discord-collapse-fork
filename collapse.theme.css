@@ -9,9 +9,9 @@
 /* add/remove "overlay" at the end of a url to change how that sidebar is displayed (e.g. .../guilds.css' or .../guildsoverlay.css') */
 
 /* guilds sidebar */
-@import url('https://raw.githubusercontent.com/Fibes1/discord-collapse/main/guildsoverlay.css');
+@import url('https://raw.githubusercontent.com/gurpreetfrs/discord-collapse-fork/main/guildsoverlay.css');
 /* users sidebar */
-@import url('https://raw.githubusercontent.com/Fibes1/discord-collapse/main/usersoverlay.css');
+@import url('https://raw.githubusercontent.com/gurpreetfrs/discord-collapse-fork/main/usersoverlay.css');
 
 :root {
     /* guilds settings */
@@ -25,4 +25,8 @@
     --11: 0.6s; /* hide animation length (default: 0.6s) */
     --12: 1s; /* how long the sidebar stays open after your cursor is moved away (default: 1s) */
     --13: 0.3s; /* how long the cursor should stay hovered before the sidebar is revealed (default: 0.3s) */
+
+    /* hover trigger area */
+    --guild-hover-width: 12px; /* width of the edge strip that reveals the guilds sidebar (default: 12px) */
+    --user-hover-width: 12px; /* width of the edge strip that reveals the users sidebar (default: 12px) */
 }
