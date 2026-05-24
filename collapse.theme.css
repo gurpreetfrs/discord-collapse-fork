@@ -15,8 +15,8 @@
 
 :root {
     /* guilds settings */
-    --1: 0.2s; /* reveal animation length (default: 0.2s) */
-    --2: 0.6s; /* hide animation length (default: 0.6s) */
+    --1: 0.45s; /* reveal animation length (default: 0.2s) */
+    --2: 0.5s; /* hide animation length (default: 0.6s) */
     --3: 1s; /* how long the sidebar stays open after your cursor is moved away (default: 1s) */
     --4: 0s; /* how long the cursor should stay hovered before the sidebar is revealed (default: 0s) */
 
@@ -32,4 +32,15 @@
 
     /* animation easing curve (applied to both sidebars) */
     --ease: cubic-bezier(0.4, 0.0, 0.2, 1); /* smooth ease-in-out; try cubic-bezier(0.16, 1, 0.3, 1) for a snappier feel */
+
+    /* Apple-style spring used for the guild island reveal.
+       The overshoot (values > 1) gives it that bouncy "settle" feel.
+       Gentler:  cubic-bezier(0.34, 1.30, 0.64, 1)
+       Bouncier: cubic-bezier(0.34, 1.80, 0.64, 1)
+       No bounce: cubic-bezier(0.22, 1, 0.36, 1) */
+    --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* guild "dynamic island" appearance */
+    --island-margin: 10px; /* gap between the floating panel and the window edges */
+    --island-radius: 18px; /* corner rounding of the floating panel */
 }
