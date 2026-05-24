@@ -1,47 +1,32 @@
-/**
-* @name Collapse
-* @description Makes the sidebars collapsible
-* @author Fibes
-*/
 
-
-/* add/remove comments surrounding an @import to disable/enable that feature */
-/* add/remove "overlay" at the end of a url to change how that sidebar is displayed (e.g. .../guilds.css' or .../guildsoverlay.css') */
-
-/* guilds sidebar */
 @import url('https://raw.githubusercontent.com/gurpreetfrs/discord-collapse-fork/main/guildsoverlay.css');
-/* users sidebar */
+
 @import url('https://raw.githubusercontent.com/gurpreetfrs/discord-collapse-fork/main/usersoverlay.css');
 
 :root {
     /* guilds settings */
-    --1: 0.45s; /* reveal animation length (default: 0.2s) */
-    --2: 0.5s; /* hide animation length (default: 0.6s) */
-    --3: 1s; /* how long the sidebar stays open after your cursor is moved away (default: 1s) */
-    --4: 0s; /* how long the cursor should stay hovered before the sidebar is revealed (default: 0s) */
+    --1: 0.45s; 
+    --2: 0.5s; 
+    --3: 1s; 
+    --4: 0s; 
 
-    /* users settings */
-    --10: 0.2s; /* reveal animation length (default: 0.2s) */
-    --11: 0.6s; /* hide animation length (default: 0.6s) */
-    --12: 1s; /* how long the sidebar stays open after your cursor is moved away (default: 1s) */
-    --13: 0.3s; /* how long the cursor should stay hovered before the sidebar is revealed (default: 0.3s) */
+
+    --10: 0.2s; 
+    --11: 0.6s; 
+    --12: 1s; 
+    --13: 0.3s;
 
     /* hover trigger area */
-    --guild-hover-width: 12px; /* width of the edge strip that reveals the guilds sidebar (default: 12px) */
-    --user-hover-width: 12px; /* width of the edge strip that reveals the users sidebar (default: 12px) */
+    --guild-hover-width: 12px; 
+    --user-hover-width: 12px; 
 
-    /* animation easing curve (applied to both sidebars) */
-    --ease: cubic-bezier(0.4, 0.0, 0.2, 1); /* smooth ease-in-out; try cubic-bezier(0.16, 1, 0.3, 1) for a snappier feel */
-
-    /* Apple-style spring used for the guild island reveal.
-       The overshoot (values > 1) gives it that bouncy "settle" feel.
-       Gentler:  cubic-bezier(0.34, 1.30, 0.64, 1)
-       Bouncier: cubic-bezier(0.34, 1.80, 0.64, 1)
-       No bounce: cubic-bezier(0.22, 1, 0.36, 1) */
+   
+    --ease: cubic-bezier(0.4, 0.0, 0.2, 1);
+    
     --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 
-    /* guild "dynamic island" appearance */
-    --island-margin: 10px; /* gap between the floating panel and the window edges */
-    --island-radius: 18px; /* corner rounding of the floating panel */
-    --guild-width: 72px; /* width of the guild list (Discord default is 72px) */
+
+    --island-margin: 10px; 
+    --island-radius: 18px; 
+    --guild-width: 72px; 
 }
