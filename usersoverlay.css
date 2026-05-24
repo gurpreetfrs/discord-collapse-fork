@@ -4,7 +4,7 @@
     height: 100%;
     right: calc(0px - var(--custom-member-list-width));
     background-color: var(--background);
-    padding-left: 1px;
+    padding-left: var(--user-hover-width, 12px);
     box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.0);
     transition: var(--11);
     transition-delay: var(--12);
@@ -21,11 +21,11 @@
     padding-left: 0px;
     box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.3);
 }
-
+ 
 .toolbar__9293f > div[aria-label="Hide Member List"]{
     display: none;
 }
-
+ 
 .container_c8ffbb{
     width: 0px;
 }
