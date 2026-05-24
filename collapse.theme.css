@@ -43,4 +43,5 @@
     /* guild "dynamic island" appearance */
     --island-margin: 10px; /* gap between the floating panel and the window edges */
     --island-radius: 18px; /* corner rounding of the floating panel */
+    --guild-width: 72px; /* width of the guild list (Discord default is 72px) */
 }
