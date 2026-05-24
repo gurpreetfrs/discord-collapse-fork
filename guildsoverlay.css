@@ -1,23 +1,17 @@
 .guilds__5e434{
     position: absolute;
     z-index: 101;
-    left: 0px;
-    top: var(--island-margin, 10px);
-    height: calc(100% - var(--island-margin, 10px) * 2);
-    border-radius: var(--island-radius, 18px);
-    transform: translateX(calc(0px - var(--guild-width, 72px) + var(--guild-peek, 28px)));
-    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.0);
-    transition:
-        transform var(--2) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1)),
-        box-shadow var(--2) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1));
+    height: 100%;
+    padding-right: 1px;
+    left: calc(0px - var(--custom-guild-list-width));
+    box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.0);
+    transition: left var(--2) var(--ease), box-shadow var(--2) var(--ease);
     transition-delay: var(--3);
 }
-
 .guilds__5e434:hover{
-    transform: translateX(var(--island-margin, 10px));
-    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.45);
-    transition:
-        transform var(--1) var(--spring, cubic-bezier(0.34, 1.56, 0.64, 1)),
-        box-shadow var(--1) var(--ease, cubic-bezier(0.4, 0.0, 0.2, 1));
+    left: 0px;
+    padding-right: 0px;
+    box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.3);
+    transition: left var(--1) var(--ease), box-shadow var(--1) var(--ease);
     transition-delay: var(--4);
 }
