@@ -1,32 +1,36 @@
+/**
+* @name Collapse
+* @description Makes the sidebars collapsible
+* @author Fibes
+*/
 
+
+/* add/remove comments surrounding an @import to disable/enable that feature */
+/* add/remove "overlay" at the end of a url to change how that sidebar is displayed (e.g. .../guilds.css' or .../guildsoverlay.css') */
+
+/* guilds sidebar */
 @import url('https://raw.githubusercontent.com/gurpreetfrs/discord-collapse-fork/main/guildsoverlay.css');
-
+/* users sidebar */
 @import url('https://raw.githubusercontent.com/gurpreetfrs/discord-collapse-fork/main/usersoverlay.css');
 
 :root {
-    /* guilds settings */
-    --1: 0.45s; 
-    --2: 0.5s; 
-    --3: 1s; 
-    --4: 0s; 
+    --1: 0.45s;
+    --2: 0.5s;
+    --3: 1s;
+    --4: 0s;
 
-
-    --10: 0.2s; 
-    --11: 0.6s; 
-    --12: 1s; 
+    --10: 0.2s;
+    --11: 0.6s;
+    --12: 1s;
     --13: 0.3s;
 
-    /* hover trigger area */
-    --guild-hover-width: 12px; 
-    --user-hover-width: 12px; 
+    --guild-hover-width: 16px;
+    --user-hover-width: 12px;
 
-   
     --ease: cubic-bezier(0.4, 0.0, 0.2, 1);
-    
     --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 
-
-    --island-margin: 10px; 
-    --island-radius: 18px; 
-    --guild-width: 72px; 
+    --island-margin: 10px;
+    --island-radius: 18px;
+    --guild-width: 72px;
 }
