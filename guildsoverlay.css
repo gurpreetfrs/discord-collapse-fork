@@ -2,7 +2,7 @@
     position: absolute;
     z-index: 101;
     height: 100%;
-    padding-right: 1px;
+    padding-right: var(--guild-hover-width, 12px);
     left: calc(0px - var(--custom-guild-list-width));
     box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.0);
     transition: var(--2);
